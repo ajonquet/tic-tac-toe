@@ -1,0 +1,98 @@
+html, body, #root {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  max-width: 600px;
+  align: center
+}
+
+.TicTacToe {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.Status {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  min-height: 2em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.Status > svg {
+  margin-left: .25em;
+}
+
+.Board {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+
+.Row {
+  display: flex;
+  flex: 1;
+}
+
+.Square {
+  background-color: #fff;
+  border: 1px solid #999;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  flex: 33%;
+  cursor: pointer;
+}
+.Square:hover {
+  background-color: #eee;
+}
+.Square[disabled]:hover {
+  background-color: #fff;
+  cursor: default;
+}
+.Square:focus {
+  outline: none;
+  background-color: #eee;
+}
+
+.Turns {
+  margin-left: 1em;
+  min-width: 4em;
+  text-align: center;
+}
+.Turns > div {
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: .125em .25em;
+  margin-bottom: .25em;
+  cursor: pointer;
+}
+.Turns > div:hover {
+  background-color: #eee;
+}
+
+.main > button {
+  margin-top: 1em;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: .5em;
+}
+.main > button:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
